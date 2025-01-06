@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: beige;
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 모바일 최적화를 위한 기본 스타일 */
+header {
+    background-color: gold;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 1rem;
+    max-width: 100%;
+}
+
+/* 모바일에서 터치 영역 최적화 */
+button, 
+a {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.5rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+p {
+    font-size: 14px;
+}
+
+.coupon-input {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#couponCode {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#submitCoupon {
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-family: "Jua", serif;
+    width: 100%;
+    max-width: 300px;
+}
+
+#submitCoupon:hover {
+    background-color: goldenrod;
+}
+
+.result-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
